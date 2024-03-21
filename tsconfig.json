@@ -7,7 +7,8 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
-    // "baseUrl": ".",
+    "baseUrl": ".",
+    "paths": { "*": ["./src/*"] },
     // TypeScript is used with the new module system instead common js
     "esModuleInterop": true,
     // allow import without *

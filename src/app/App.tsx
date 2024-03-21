@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import AboutPage from './pages/AboutPage/AboutPage';
-import MainPage from './pages/MainPage/MainPage';
+import { AboutPage } from 'pages/AboutPage/';
+import { MainPage } from 'pages/MainPage/';
 import { Link } from 'react-router-dom';
 import { Suspense } from 'react';
 import './styles/index.scss';
-import { useTheme } from './theme/useTheme';
+import { useTheme } from './providers/ThemeProvider';
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
