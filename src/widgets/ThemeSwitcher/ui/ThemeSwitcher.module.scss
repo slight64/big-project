@@ -1,3 +1,7 @@
+.ThemeSwitcher {
+  line-height: 0;
+}
+
 .label {
   width: 40px;
   height: 20px;
@@ -20,6 +24,7 @@
 }
 
 .input {
+  font-size: 0;
   width: 0;
   height: 0;
   visibility: hidden;

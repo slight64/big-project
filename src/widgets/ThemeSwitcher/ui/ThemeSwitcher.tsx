@@ -11,7 +11,7 @@ interface ThemeSwitcherProps {
 export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className={classNames(cls.themeSwitcher, {}, [className])}>
+    <div className={classNames(cls.ThemeSwitcher, {}, [className])}>
       <input
         onChange={toggleTheme}
         className={cls.input}
