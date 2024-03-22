@@ -1,0 +1,49 @@
+.label {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  background-color: var(--bg-color);
+  border-radius: 20px;
+  cursor: pointer;
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    background-color: var(--bg-color-inverted);
+    border-radius: 50%;
+    transition: 0.15s;
+  }
+}
+
+.input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+
+  &:checked + .label {
+    background-color: var(--bg-color);
+  }
+
+  &:checked + .label::after {
+    transform: translateX(20px);
+  }
+
+  &:checked + .label > .icon {
+    transform: translateX(20px);
+    fill: var(--bg-color);
+  }
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  fill: var(--bg-color);
+  z-index: 1;
+}
