@@ -8,6 +8,7 @@
     "allowJs": true,
     "moduleResolution": "node",
     "baseUrl": ".",
+    "strictNullChecks": false,
     "paths": { "*": ["./src/*"] },
     // TypeScript is used with the new module system instead common js
     "esModuleInterop": true,
